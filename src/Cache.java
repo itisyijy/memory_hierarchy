@@ -15,11 +15,13 @@ public class Cache {
         this.tag = 0;
         this.block = new Block();
     }
-
-    public void set_block(int value) {
-        this.block.price = value;
+    public void setValid(int valid) {
+        this.valid = valid;
     }
-    public Block get_block() {
-        return this.block;
+    public void setTag(int tag) {
+        this.tag = tag;
+    }
+    public void setBlock(float value) {
+        this.block.price = value;
     }
 }
